@@ -1,27 +1,97 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  
+  <title>나의 시간표</title>
   <style>
-*{margin:0; padding:0; box-sizing:border-box;}
-  h3{color:green}
-  .red{color:red}
-  .blue{color:blue}
-    a:link{color:black; text-decoration:none;}
-    a:visited{color:black:}
- </style>
-  
-  <title>웹프로그래밍 과제</title>
-  
+    h2 {
+      color: navy;          /* 1. 글자색 */
+      font-size: 30px;      /* 2. 글자 크기 */
+    }
+
+    th, td {
+      border: 1px solid gray;   /* 3. 테두리 */
+      padding: 10px;            /* 4. 안쪽 여백 */
+    }
+  </style>
 </head>
-  <body>
-    <h1 class="red">웹프로그래밍 과제 모음</h1>
-    <hr>
-    <h2 class="blue" >빨강</h2>
-    <h2 class="blue">파랑</h2>
-    <h3>녹색</h3>
-    <a href="https://www.syu.ac.kr/aice/department-introduction/introduction/">삼육대학교</a>
-    
-  </body>
+<body>
+  <h2>시간표</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>교시</th>
+        <th>월</th>
+        <th>화</th>
+        <th>수</th>
+        <th>목</th>
+        <th>금</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <td></td>
+        <td></td>
+        <td rowspan="2">역사와문화</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td></td>
+        <td></td>
+        <td rowspan="3">예술과과학</td>
+        <td rowspan="3">조직행동론</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>채플</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>4</th>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>5</th>
+        <td rowspan="3">인공지능확률론</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>6</th>
+        <td rowspan="3">웹프로그래밍</td>
+        <td></td>
+        <td rowspan="3">AI반도체공정</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>7</th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>8</th>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>9</th>
+        <td></td>
+        <td>인설진</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
 </html>
