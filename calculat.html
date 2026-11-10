@@ -28,6 +28,19 @@ $(".num").click(function(){
  let n = $(this).val();
  $("#disp2").val(cur+n);
  });
+    $(".op").click(function(){
+
+    let cur = $("#disp2").val();
+    let n = $(this).val();
+
+    if(n != "=") {
+        $("#disp2").val(cur+n);
+    }
+    else {
+        let result = eval(cur);
+    }
+
+});
 });
     
     </script>
